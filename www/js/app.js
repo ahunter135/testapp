@@ -26,16 +26,10 @@ angular
         StatusBar.styleDefault();
       }
 
-      navigator.splashscreen.hide();
       if (IonicCordova) {
-        alert("HERE2");
         IonicCordova.deploy
           .configure({ channel: "production" })
-          .then(function (data) {
-            alert("DONE");
-          });
-      } else {
-        alert("HERE");
+          .then(function (data) {});
       }
     });
   })
