@@ -25,6 +25,8 @@ angular
         // remove the status bar on iOS or change it to use white instead of dark colors.
         StatusBar.styleDefault();
       }
+
+      navigator.splashscreen.hide();
       if (IonicCordova) {
         alert("HERE2");
         IonicCordova.deploy
