@@ -3,6 +3,11 @@ angular
 
   .controller("DashCtrl", function ($scope) {
     navigator.splashscreen.hide();
+
+    $scope.refresh = function () {
+      console.log("refreshing");
+      IonicCordova.deploy.sync();
+    };
   })
 
   .controller("ChatsCtrl", function ($scope, Chats) {
